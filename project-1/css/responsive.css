@@ -1,0 +1,47 @@
+.hero-visual { display: none; }
+
+@media (min-width: 768px) {
+
+  /* Nav: show links, hide hamburger */
+  .hamburger     { display: none !important; }
+  .nav-links     { display: flex !important; }
+
+
+  .hero-content  {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero-visual   { display: flex; }
+
+
+  .card-grid     { grid-template-columns: 1fr 1fr; }
+
+
+  .two-col       { grid-template-columns: 1fr 1fr; }
+
+
+  .stats-grid    { grid-template-columns: repeat(4, 1fr); }
+
+  .footer-grid   { grid-template-columns: 2fr 1fr 1fr; }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 767px) {
+
+  .hamburger { display: flex; }
+
+  .nav-links { display: none; }
+
+  .footer-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs — Build The Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation" class="container">
+      <div class="nav-container">
+
+        <a href="#" class="nav-logo" aria-label="DecodeLabs Home">
+          Decode<span>Labs</span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#contact" class="btn btn-primary nav-cta">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav" role="list">
+      <a href="#about" role="listitem">About</a>
+      <a href="#projects" role="listitem">Projects</a>
+      <a href="#skills" role="listitem">Skills</a>
+      <a href="#roadmap" role="listitem">Roadmap</a>
+      <a href="#contact" role="listitem">Contact</a>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-text">
+            <span class="hero-badge">DecodeLabs · Batch 2026</span>
+            <h1 id="hero-heading">
+              Build The<br /><span class="accent">Future.</span>
+            </h1>
+            <p>
+              A strategic execution framework for full-stack interns.
+              Master the responsive web — no frameworks, just pure craft.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-blue">View Projects</a>
+              <a href="#roadmap" class="btn btn-ghost">See Roadmap</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="device-mockup">
+              <div class="device-screen">
+                <div class="device-topbar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="device-body">
+                  <div class="device-hero-block">
+                    <p>Build The Future</p>
+                  </div>
+                  <div class="device-cards">
+                    <div class="device-card"></div>
+                    <div class="device-card"></div>
+                  </div>
+                  <div class="device-footer-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <p class="section-label fade-up">What We Build</p>
+        <h2 class="section-title fade-up" id="projects-heading">Content Grid</h2>
+        <p class="section-sub fade-up">
+          Hands-on milestones that prove you can craft user-friendly experiences
+          working seamlessly on any device.
+        </p>
+
+        <div class="card-grid" role="list">
+
+          <article class="card fade-up" role="listitem" tabindex="0" aria-label="Project 1: Responsive Frontend Interface">
+            <div class="card-img card-img--blue" aria-hidden="true">🎨</div>
+            <div class="card-body">
+              <span class="card-tag tag-blue">Project 1</span>
+              <h3 class="card-title">Responsive Frontend Interface</h3>
+              <p class="card-text">
+                Create a responsive frontend using HTML, CSS, and basic JavaScript.
+                Mobile-first layout with clean, user-friendly UI.
+              </p>
+              <div class="card-footer-row">
+                <span class="card-meta">HTML · CSS · JS</span>
+                <span class="card-action">View Brief →</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up" role="listitem" tabindex="0" aria-label="Project 2: Backend API Integration">
+            <div class="card-img card-img--mocha" aria-hidden="true">⚙️</div>
+            <div class="card-body">
+              <span class="card-tag tag-mocha">Project 2</span>
+              <h3 class="card-title">Backend API Integration</h3>
+              <p class="card-text">
+                Connect the frontend to a RESTful backend. Handle data fetching,
+                error states, and dynamic rendering.
+              </p>
+              <div class="card-footer-row">
+                <span class="card-meta">REST · Fetch API</span>
+                <span class="card-action">Locked 🔒</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up" role="listitem" tabindex="0" aria-label="Project 3: Full Stack Application">
+            <div class="card-img card-img--green" aria-hidden="true">🚀</div>
+            <div class="card-body">
+              <span class="card-tag tag-green">Project 3</span>
+              <h3 class="card-title">Full Stack Application</h3>
+              <p class="card-text">
+                Deploy a complete full-stack app with authentication,
+                database interaction, and production-ready code.
+              </p>
+              <div class="card-footer-row">
+                <span class="card-meta">Node · DB · Auth</span>
+                <span class="card-action">Locked 🔒</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="stats-strip" role="complementary" aria-label="Program statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat fade-up">
+            <p class="stat-num">3</p>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat fade-up">
+            <p class="stat-num">6</p>
+            <p class="stat-label">Pillars</p>
+          </div>
+          <div class="stat fade-up">
+            <p class="stat-num">100%</p>
+            <p class="stat-label">Responsive</p>
+          </div>
+          <div class="stat fade-up">
+            <p class="stat-num">0</p>
+            <p class="stat-label">Frameworks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="two-col">
+
+          <div>
+            <p class="section-label fade-up">Your Toolkit</p>
+            <h2 class="section-title fade-up" id="skills-heading">Raw Materials</h2>
+            <p class="section-sub fade-up">
+              No frameworks. Master the fundamentals first — HTML5, CSS3, and JavaScript.
+            </p>
+
+            <div class="sidebar-panel fade-up" id="skills-panel">
+              <h3>Skill Progress</h3>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML5 Semantics</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">CSS Grid &amp; Flexbox</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="0.8"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript DOM</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="0.7"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Accessibility (WCAG)</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="0.75"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="roadmap">
+            <p class="section-label fade-up">Execution Plan</p>
+            <h2 class="section-title fade-up" id="roadmap-heading">The Roadmap</h2>
+            <p class="section-sub fade-up">
+              Six stages from discovery to audit — your blueprint for Project 1.
+            </p>
+
+            <ol class="steps-list fade-up" aria-label="Project execution steps">
+              <li class="step">
+                <div class="step-num" aria-hidden="true">1</div>
+                <div class="step-content">
+                  <h4>Discovery</h4>
+                  <p>Define "How Might We" — empathy maps, user research.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num" aria-hidden="true">2</div>
+                <div class="step-content">
+                  <h4>Wireframe</h4>
+                  <p>Grayscale, mobile-first low-fidelity wireframes.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num" aria-hidden="true">3</div>
+                <div class="step-content">
+                  <h4>Semantics</h4>
+                  <p>HTML5 landmark elements — header, nav, main, article, footer.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num" aria-hidden="true">4</div>
+                <div class="step-content">
+                  <h4>Style</h4>
+                  <p>CSS Grid/Flexbox with the 2025 Mocha &amp; Blue palette.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num" aria-hidden="true">5</div>
+                <div class="step-content">
+                  <h4>Logic</h4>
+                  <p>State management and interactive JS functionality.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num" aria-hidden="true">6</div>
+                <div class="step-content">
+                  <h4>Audit</h4>
+                  <p>LCP/CLS performance checks and WCAG accessibility audit.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section section--dark" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+        <p class="section-label fade-up section-label--blue">Get In Touch</p>
+        <h2 class="section-title fade-up section-title--white" id="contact-heading">
+          Ready to Build?
+        </h2>
+        <p class="section-sub fade-up section-sub--muted">
+          Open your IDE, initialize the repository, and begin with the blueprint.
+          Your journey to becoming a professional developer starts now.
+        </p>
+        <div class="contact-actions fade-up">
+          <a href="mailto:decodelabs.tech@gmail.com" class="btn btn-blue">Email DecodeLabs</a>
+          <a href="https://www.decodelabs.tech" class="btn btn-ghost-white" target="_blank" rel="noopener">Visit Website</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo" aria-label="DecodeLabs Home">Decode<span>Labs</span></a>
+          <p>A Strategic Execution Framework for Full-Stack Interns. Batch 2026 · Greater Lucknow, India.</p>
+        </div>
+
+        <nav aria-label="Footer navigation: Program">
+          <h4>Program</h4>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <nav aria-label="Footer navigation: Contact">
+          <h4>Contact</h4>
+          <a href="tel:+918933006408">+91 89330 06408</a>
+          <a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a>
+          <a href="https://www.decodelabs.tech" target="_blank" rel="noopener">www.decodelabs.tech</a>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DecodeLabs. All rights reserved.</p>
+        <p>Project 1 — Responsive Frontend Interface</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>

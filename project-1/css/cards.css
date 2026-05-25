@@ -1,0 +1,106 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: 48px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(44, 36, 32, 0.08));
+}
+
+.card-img--blue  { background: linear-gradient(135deg, var(--blue) 0%, #c9e9f0 100%); }
+.card-img--mocha { background: linear-gradient(135deg, rgba(165,133,110,0.3) 0%, rgba(201,176,153,0.4) 100%); }
+.card-img--green { background: linear-gradient(135deg, rgba(80,160,80,0.2) 0%, rgba(128,200,128,0.4) 100%); }
+
+.card-body {
+  padding: 20px 24px 24px;
+}
+
+.card-tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.tag-blue  { background: rgba(160, 212, 224, 0.2); color: #4a8fa0; }
+.tag-mocha { background: rgba(165, 133, 110, 0.15); color: var(--mocha); }
+.tag-green { background: rgba(80, 160, 80, 0.12);  color: #4a8a4a; }
+
+/* ── Card content ── */
+.card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.card-text {
+  font-size: 0.88rem;
+  color: rgba(44, 36, 32, 0.6);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-meta {
+  font-size: 0.78rem;
+  color: rgba(44, 36, 32, 0.45);
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.card-action {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--mocha);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap var(--transition);
+}
+
+.card:hover .card-action {
+  gap: 8px;
+}
